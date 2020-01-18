@@ -16,26 +16,7 @@ for(i = 1; i <= numeros; i++)
 	}
 	document.write("<br>");
 }
-function hola()
-{
-	alert("hola");
-}
-function hola()
-{
-	alert("hola");
-}
-function hola()
-{
-	alert("hola");
-}
-function hola()
-{
-	alert("hola");
-}
-function hola()
-{
-	alert("hola");
-}
+
 
 function esDivisible(num, divisor)
 {
