@@ -16,7 +16,10 @@ for(i = 1; i <= numeros; i++)
 	}
 	document.write("<br>");
 }
-
+function pedro()
+{
+	
+}
 function esDivisible(num, divisor)
 {
 	if(num % divisor == 0)
