@@ -16,25 +16,25 @@ for(i = 1; i <= numeros; i++)
 	}
 	document.write("<br>");
 }
-function hola()
+function aprendiendo()
 {
-	alert("hola");
+	alert("aprendiendo");
 }
-function hola()
+function aprendiendo()
 {
-	alert("hola");
+	alert("aprendiendo");
 }
-function hola()
+function aprendiendo()
 {
-	alert("hola");
+	alert("aprendiendo");
 }
-function hola()
+function aprendiendo()
 {
-	alert("hola");
+	alert("aprendiendo");
 }
-function hola()
+function aprendiendo()
 {
-	alert("hola");
+	alert("aprendiendo");
 }
 
 function esDivisible(num, divisor)
