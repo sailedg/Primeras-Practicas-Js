@@ -66,7 +66,7 @@ slider.oninput = function() {
 
 function guardari(){
 
-	let filename = prompt("Guardar como png","");
+	let filename = prompt("Guardar como","");
 
 	if (filename == null){//si el usiario dio cancelar
 		return false;

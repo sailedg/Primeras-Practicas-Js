@@ -4,11 +4,11 @@ for(i = 1; i <= numeros; i++)
 {
 	if(esDivisible(i, 3))
 	{
-		document.write("loco");
+		document.write("Fizz");
 	}
 	if(esDivisible(i, 5))
 	{
-		document.write("Bien");
+		document.write("Booz");
 	}
 	if(!esDivisible(i, 3) && !esDivisible(i, 5))
 	{
