@@ -52,7 +52,6 @@ vaca.imagen = new Image();
 vaca.imagen.src = vaca.url;
 vaca.imagen.addEventListener("load", cargarVacas);
 
-
 //FUNCIONES PARA CARGAR LAS IMÁGENES AL SERVIDOR ANTES DE COLOCARLAS EN NUESTRO PAPEL
 function cargarFondo()
 {
