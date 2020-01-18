@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dibujando con flechas</title>
+	</head>
+	<style type="text/css">
+		canvas {
+			border : solid 1px;
+			
+		}
+		.herramientas {
+			width: 100px;
+		}
+		.herramientas div {
+			background-color: black;
+		}
+		.herramientas div:hover{
+			border: solid red 1px;
+		}
+		.herramientas img:hover{
+			border: solid red 1px;
+		}
+	</style>
+<body>
+<table>
+	<tr>
+		<td><canvas width="500" height="500" id="area" onmousemove="pintar(event);" onmousedown="activar();" onmouseup="desactivar();"></canvas></td>
+		<td class="herramientas">
+			<a href="#" onclick="lapiz();"><img src="imagen/lapiz.png" /></a>
+			<a href="#" onclick="borrador();"><img src="imagen/borrador.png" /></a>
+			<input type="range" min="1" max="10" id="myRange" value="2">
+			<p>Tamaño: <span id="demo"></span></p>
+			<input type="color" id="colores" onchange="scolor();"/>
+			<input type="button" id="limpiar" value="Restaurar">
+			<a href="#" download="canvas.png" id="guardarimagen" >Guardar como imagen</a>
+		</td>
+	</tr>
+</table>
+
+<script type="text/javascript" src="eventos.js"></script>
+<script>
+	document.getElementById("guardarimagen").addEventListener("click", guardari);
+</script>
+</body>
+</html>

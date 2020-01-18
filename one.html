@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>¿Cual es tu peso en la Tierra 2?</p>
+
+
+<script type="text/javascript">
+		var usuario = prompt("¿Cual es tu peso?");
+		var option = parseInt(prompt("Elige un planeta\n 1 es Martes\n 2 es Jupiter"));
+		var peso = parseInt(usuario);
+		var marte = 3.7;
+		var tierra = 9.8;
+		var jupiter = 24.8; 
+		var pesosF;
+		var nombre;
+		
+		if(option == 1)
+		{
+			pesosF = peso * marte / tierra;
+			nombre = "Martes";
+
+		}
+		else if(option == 2)
+		{
+			pesosF = peso * jupiter / tierra;
+			nombre = "Jupiter";
+		}
+		else
+		{
+			alert("opción incorrecta");
+		}
+		
+		pesosF = parseInt(pesosF);
+		
+		document.write("Tu peso en " + nombre + " es "+ pesosF);
+
+
+</script>
+</body>
+</html>

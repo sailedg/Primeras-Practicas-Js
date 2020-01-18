@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dibujo en canvas</title>
+</head>
+<body>
+	<h1>dibujo en canvas</h1>
+	<canvas width="300" height="300" id="dibujito"></canvas>
+	<p>asi queda tu dibujo</p>
+
+	<script type="text/javascript">
+		var d = document.getElementById('dibujito');
+var lienzo = d.getContext("2d");
+var lineas = 30;
+var l = 0;
+
+while(l < lineas)
+{
+	dibujar("blue",0,0,10,300);
+	l = l + 1;
+}
+
+function dibujar(color, xinicial, xfinal, yinicial, yfinal){
+	lienzo.beginPath();
+	lienzo.strokeStyle = color;
+	lienzo.moveTo(xinicial, yinicial);
+	lienzo.lineTo(xfinal,yfinal);
+	lienzo.stroke();
+	lienzo.closePath();
+}
+	</script>
+</body>
+</html>
